@@ -1,1 +1,5 @@
 # Heart-Dataset
+
+This dataset contains X-ray imaging of the chest. X-rays were prescribed mostly for routine check-ups or due to various cardiovascular or pulmonary disorders. Chest X-rays were taken in the posterior-anterior projection in the upright position with the chest in the mid-inspiratory condition using Siemens Siemens Ysio Max or Axiom Luminos dRF. The X-ray images were resized to a unified size of 512 by 512, and then three radiologists manually segmented the lungs and the heart. Radiologists separately annotated a single X-ray image and then analyzed it together to unify the process of segmentation of lungs and heart. The dataset's final version consists of 114 2D images (342 segmentation)
+
+The dataset contains two folders: The images folder contains the X-ray images, and The segmentations folder contains three segmentations by three experts in the following format: {i}_{1,2,3} where i is the image number and {1,2,3} are labels. The dataset (images/segmentations folder) is further divided into 65 images in the training folder and 49 images in the testing folder. 
